@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belah Ketupat</title>
+    <link rel="stylesheet" href="bk.css">
+</head>
+
+<body>
+    <a href="/index.html">
+        <span class="text-sm font-medium "> Home</span>
+      </a>
+    <form>
+        <h1>Belah Ketupat</h1>
+        <div id="kelilingInputs">
+            <label id="lLabel" for="textBox1">Sisi :</label><br>
+            <input type="number" id="textBox1"><br>
+          
+
+        </div>
+
+        <div id="luasInputs" style="display: none;"><!--Untuk menghilangkan input diagonal-->
+            <label id="lLabel">Diagonal 1:</label><br>
+            <input type="number" id="Diagonal1"><br>
+            <label id="lLabel">Diagonal2:</label><br>
+            <input type="number" id="Diagonal2"><br>
+        </div>
+
+        <input type="radio" id="HitungKeliling" name="hitung" onclick="saklar()">
+        <label for="HitungKeliling">Hitung Keliling</label><br>
+        <input type="radio" id="HitungLuas" name="hitung" onclick="saklar()">
+        <label for="HitungLuas">Hitung Luas</label><br>
+
+        <button type="button" onclick="hitungg()">Submit</button>
+        <p id="result1"></p>
+
+    </form>
+
+
+    <script src="bk.js"></script>
+</body>
+
+</html>
